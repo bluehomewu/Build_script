@@ -20,8 +20,6 @@ rm -rf  out/target/product/*
 export WITH_GAPPS=true
 export TARGET_GAPPS_ARCH=arm64
 export HAVOC_BUILD_TYPE=Official
-export WITH_GAPPS=true
-export TARGET_GAPPS_ARCH=arm64
 #bash external/motorola/faceunlock/regenerate/regenerate.sh
 export SELINUX_IGNORE_NEVERALLOWS=true
 brunch havoc_NB1-userdebug | tee havoc_NB1_Official_Gapps_$(date +"%Y%m%d_%H.%M")GMT8.txt

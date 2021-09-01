@@ -9,6 +9,10 @@ cd ~/havoc-11_ASUS/device/asus/X00QD && git pull -f
 cd ~/havoc-11_ASUS/kernel/asus/sdm660 && git pull -f
 cd ~/havoc-11_ASUS/vendor/asus/X00QD && git pull -f
 cd ~/havoc-11_ASUS
+rm -rf  out/target/product/*
+export WITH_GAPPS=false
+export TARGET_GAPPS_ARCH=arm64
+export HAVOC_BUILD_TYPE=Official
 #bash external/motorola/faceunlock/regenerate/regenerate.sh
 export SELINUX_IGNORE_NEVERALLOWS=true
 export HAVOC_BUILD_TYPE=Official

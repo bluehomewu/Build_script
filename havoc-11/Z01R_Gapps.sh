@@ -10,7 +10,7 @@ cd ~/havoc-11_ASUS/kernel/asus/sdm845 && git pull -f
 cd ~/havoc-11_ASUS/vendor/asus/Z01R && git pull -f
 cd ~/havoc-11_ASUS
 rm -rf  out/target/product/*
-export WITH_GAPPS=false
+export WITH_GAPPS=true
 export TARGET_GAPPS_ARCH=arm64
 export HAVOC_BUILD_TYPE=Official
 #bash external/motorola/faceunlock/regenerate/regenerate.sh
