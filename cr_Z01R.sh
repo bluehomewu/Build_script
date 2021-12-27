@@ -13,4 +13,4 @@ cd ~/crDroid/vendor/asus/Z01R && git pull -f
 cd ~/crDroid
 #export SELINUX_IGNORE_NEVERALLOWS=true
 brunch lineage_Z01R-userdebug | tee crDroid_Z01R_Official_$(date +"%Y%m%d_%H.%M")GMT8.txt
-. ~/crDroid/createjson.sh
+# . ~/crDroid/createjson.sh
