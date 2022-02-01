@@ -2,14 +2,15 @@
 #Build Z01R Based on los
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
-ccache -M 50G
-cd ~/havoc-11_los
+ccache -M 100G
+cd ~/havoc-11
 . build/envsetup.sh
-cd ~/havoc-11_los/device/asus/Z01R && git pull -f
-cd ~/havoc-11_los/kernel/asus/sdm845
-cd ~/havoc-11_los/vendor/asus/Z01R && git pull -f
-cd ~/havoc-11_los
-rm -rf  out/target/product/*
+cd ~/havoc-11/device/asus/Z01R && git pull -f
+cd ~/havoc-11/kernel/asus/sdm845
+cd ~/havoc-11/vendor/asus/Z01R && git pull -f
+cd ~/havoc-11
+make clean
+#rm -rf  out/target/product/*
 export WITH_GAPPS=true
 export TARGET_GAPPS_ARCH=arm64
 export HAVOC_BUILD_TYPE=Official

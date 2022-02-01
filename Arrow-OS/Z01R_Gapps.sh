@@ -3,10 +3,10 @@
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
 export CCACHE_DIR=~/.ccache
-ccache -M 50G
+ccache -M 100G
 cd ~/arrow-12
 . build/envsetup.sh
-cd ~/arrow-12/device/asus/Z01R && git pull -f
+# cd ~/arrow-12/device/asus/Z01R && git pull -f
 cd ~/arrow-12/kernel/asus/sdm845 && git pull -f
 cd ~/arrow-12/vendor/asus/ && git pull -f
 cd ~/arrow-12
